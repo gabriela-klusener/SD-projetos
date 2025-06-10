@@ -3,7 +3,8 @@ package com.microservice.clientes.Clientes_microservice_curse.dto;
 import com.microservice.clientes.Clientes_microservice_curse.enums.StatusProjetoModel;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import java.sql.Date;
+
+import java.util.Date;
 
 public class ProjetoDTO {
 

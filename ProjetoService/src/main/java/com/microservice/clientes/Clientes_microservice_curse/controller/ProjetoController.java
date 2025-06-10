@@ -4,6 +4,7 @@ import com.microservice.clientes.Clientes_microservice_curse.dto.ProjetoDTO;
 import com.microservice.clientes.Clientes_microservice_curse.enums.StatusProjetoModel;
 import com.microservice.clientes.Clientes_microservice_curse.exception.ProjetoNaoEncontradoException;
 import com.microservice.clientes.Clientes_microservice_curse.service.GestaoProjetoService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +24,10 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("api/projetos")
+@Tag(
+        name = "CRUD REST APIs for Customers in Project",
+        description = "REST APIs in Project to FETCH customer details"
+)
 public class ProjetoController {
 
     private static final Logger log = LoggerFactory.getLogger(ProjetoController.class);
